@@ -1,24 +1,30 @@
 import turtle as t
-#BỐI CẢNH
+#Nha
 t.penup()
 t.goto(-100,-200)
-t.speed(6)
 t.pendown()
 t.pensize(4)
 t.pencolor("black")
-t.bgcolor("grey")
+t.speed(10)
 
 
-#NHÀ
+#gắn biến
+cao=150
+rong=160
+lacay=90
+tia1=50
+tia2=30
+
+
 t.fillcolor("blue")
 t.begin_fill()
 t.rt(90)
 n=0
 while n<2:
 	t.rt(90)
-	t.fd(150)
+	t.fd(cao)
 	t.rt(90)
-	t.fd(160)
+	t.fd(rong)
 	n=n+1
 t.end_fill()
 
@@ -27,7 +33,7 @@ t.begin_fill()
 t.lt(120)
 t.fd(80)
 t.lt(60)
-t.fd(160)
+t.fd(rong)
 t.lt(120)
 t.fd(80)
 t.end_fill()
@@ -35,20 +41,20 @@ t.end_fill()
 t.fillcolor("violet")
 t.begin_fill()
 t.rt(90)
-t.fd(150)
+t.fd(cao)
 t.lt(120)
-t.fd(150)
+t.fd(cao)
 t.end_fill()
 t.lt(180)
 t.penup()
-t.fd(150)
+t.fd(cao)
 t.pendown()
 t.fillcolor("orange")
 t.begin_fill()
 t.rt(30)
 t.fd(80)
 t.rt(90)
-t.fd(150)
+t.fd(cao)
 t.rt(90)
 t.fd(80)
 t.end_fill()
@@ -81,7 +87,6 @@ while i<2:
 t.end_fill()
 
 
-
 #CÂY
 t.penup()
 t.goto(200,-200)
@@ -106,12 +111,12 @@ t.fd(30)
 i=0
 while i<3:
 	t.rt(120)
-	t.fd(90)
+	t.fd(lacay)
 	i=i+1
 t.end_fill()
 
 t.rt(120)
-t.fd(90)
+t.fd(lacay)
 t.rt(60)
 t.fillcolor("green")
 t.begin_fill()
@@ -119,11 +124,11 @@ t.fd(45)
 i=0
 while i<3:
 	t.lt(120)
-	t.fd(90)
+	t.fd(lacay)
 	i=i+1
 t.end_fill()
 t.lt(120)
-t.fd(90)
+t.fd(lacay)
 t.lt(60)
 t.fillcolor("green")
 t.begin_fill()
@@ -131,7 +136,7 @@ t.fd(45)
 i=0
 while i<3:
 	t.rt(120)
-	t.fd(90)
+	t.fd(lacay)
 	i=i+1
 t.end_fill()
 
@@ -146,28 +151,28 @@ t.begin_fill()
 t.circle(50)
 t.end_fill()
 t.rt(90)
-t.fd(50)
+t.fd(tia1)
 t.penup()
 t.goto(100,150)
 t.lt(180)
 t.pendown()
-t.fd(50)
+t.fd(tia1)
 t.penup()
 t.goto(50,200)
 t.pendown()
 t.rt(90)
-t.fd(50)
+t.fd(tia1)
 t.penup()
 t.goto(150,200)
 t.pendown()
 t.lt(180)
-t.fd(50)
+t.fd(tia1)
 t.penup()
 t.goto(100,200)
 t.lt(45)
 t.fd(50)
 t.pendown()
-t.fd(30)
+t.fd(tia2)
 i=0
 while i<3:
 	t.penup()
@@ -175,7 +180,7 @@ while i<3:
 	t.lt(90)
 	t.fd(50)
 	t.pendown()
-	t.fd(30)
+	t.fd(tia2)
 	i=i+1
 
 
